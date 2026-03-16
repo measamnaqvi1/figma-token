@@ -1,8 +1,7 @@
-const StyleDictionary = require("style-dictionary")
+import StyleDictionary from "style-dictionary";
 
-module.exports = {
+const config = {
     source: ["tokens/**/*.json"],
-
     platforms: {
         css: {
             transformGroup: "css",
@@ -15,4 +14,6 @@ module.exports = {
             ]
         }
     }
-}
+};
+
+export default config;
